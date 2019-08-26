@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/jonathanprieto/Documents/GitHub/jumping-mario-jonathanprieto99/main.cpp
+iostream
+-
+stdlib.h
+-
+stdio.h
+-
+vector
+-
+algorithm
+-
+
