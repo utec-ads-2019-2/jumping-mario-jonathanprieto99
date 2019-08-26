@@ -13,17 +13,22 @@ int main(){
 		H =0;
 		L =0;
 		cin >> N;
+
 		if(T == 1){
 			cout << "Case " << T << ": " << H <<  " " << L << endl;
 			continue;
 		}
+
 		int j=0;
+
 		while(j<N)
 		{
 			cin >> v[j];
 			j++;
 		}
+
 		int k=0;
+
 		while(k<N-1){
 			if(v[k] < v[k+1]){
 				H++;
