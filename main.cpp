@@ -6,22 +6,22 @@
 using namespace std;
 
 int main(){
-	int T,N,H,L;
-	cin >> T;
+	int TIMES,AMOUNT,HIGH,LOW;
+	cin >> TIMES;
 	vector<int> v(50);
-	for(int i=0; i<T;i++){
-		H =0;
-		L =0;
-		cin >> N;
+	for(int i=0; i<TIMES;i++){
+		HIGH =0;
+		LOW =0;
+		cin >> AMOUNT;
 
-		if(T == 1){
-			cout << "Case " << T << ": " << H <<  " " << L << endl;
+		if(TIMES == 1){
+			cout << "Case " << TIMES << ": " << HIGH <<  " " << LOW << endl;
 			continue;
 		}
 
 		int j=0;
 
-		while(j<N)
+		while(j<AMOUNT)
 		{
 			cin >> v[j];
 			j++;
@@ -29,16 +29,16 @@ int main(){
 
 		int k=0;
 
-		while(k<N-1){
+		while(k<AMOUNT-1){
 			if(v[k] < v[k+1]){
-				H++;
+				HIGH++;
 			}
 			else if (v[k] > v[k+1]){
-				L++;
+				LOW++;
 			}
 			k++;
 		}
-		cout << "Case " << i+1 << ": " << H <<  " " << L << endl;
+		cout << "Case " << i+1 << ": " << HIGH <<  " " << LOW << endl;
 
 	}
 	return 0;
